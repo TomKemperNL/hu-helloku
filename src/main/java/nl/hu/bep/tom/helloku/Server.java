@@ -15,6 +15,7 @@ public class Server {
 
     public void start() throws IOException {
         System.out.println("Starting on port " + port);
+        currentString.appendLine("Dit laat zien wat er over TCP is binnen gekomen:");
 
         Timer timer = new Timer();
         timer.schedule(new ClearTask(currentString), 30 * 1000);
